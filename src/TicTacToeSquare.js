@@ -1,13 +1,14 @@
 import React from 'react';
 
-const TicTacToeSquare = () => {
+const TicTacToeSquare = index => {
   
-  function markX() {
-      document.getElementById("0").innerHTML = "X";
+  function markX(obj) {
+      //document.getElementById({index}).innerHTML = "X";
+      obj.innerHTML = "X";
   }
   
   return (
-      <label id="0" onClick={() => markX()}>_</label>
+      <label id={index} onClick={() => markX(this.obj)}>_</label>
   );
 };
 

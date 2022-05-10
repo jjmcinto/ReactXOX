@@ -1,13 +1,12 @@
 //import logo from './logo.svg';
 import HelloWorld from './HelloWorld';
-import TicTacToeSquare from './TicTacToeSquare';
+import TicTacToeGame from './TicTacToeGame';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-          <HelloWorld /><br/>
-          <TicTacToeSquare />
+          <TicTacToeGame/>
     </div>
   );
 }
