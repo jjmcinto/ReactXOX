@@ -1,12 +1,12 @@
-//import logo from './logo.svg';
-import HelloWorld from './HelloWorld';
 import TicTacToeGame from './TicTacToeGame';
+import ResetButton from './ResetButton';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-          <TicTacToeGame/>
+    <div className="App center">
+        <ResetButton/>
+        <TicTacToeGame/>
     </div>
   );
 }

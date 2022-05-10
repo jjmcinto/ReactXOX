@@ -47,7 +47,7 @@ const TicTacToeGame = () => {
         if (lblResult.innerHTML.substring(0, 4)==="Next"){
             let spot = document.getElementById(index);
             lblResult.innerHTML = "Next turn: "
-            if (spot.innerHTML === "_"){
+            if (spot.innerHTML === " "){
                 if (xTurn){ //X's turn
                     spot.innerHTML = "X"; //mark an X
                     lblResult.innerHTML += "O"; //indicate next turn is O's
@@ -65,16 +65,28 @@ const TicTacToeGame = () => {
         }
     }
     
-    return <div><label id="0" onClick={() => markX("0")}>_</label>
-    <label id="1" onClick={() => markX("1")}>_</label>
-    <label id="2" onClick={() => markX("2")}>_</label><br/>
-    <label id="3" onClick={() => markX("3")}>_</label>
-    <label id="4" onClick={() => markX("4")}>_</label>
-    <label id="5" onClick={() => markX("5")}>_</label><br/>
-    <label id="6" onClick={() => markX("6")}>_</label>
-    <label id="7" onClick={() => markX("7")}>_</label>
-    <label id="8" onClick={() => markX("8")}>_</label><br/>
-    <label id="result">Next turn: X</label></div>
+    return <div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td> <label className="XOSquare" id="0" onClick={() => markX("0")}> </label></td>
+                            <td> <label className="XOSquare" id="1" onClick={() => markX("1")}> </label></td>
+                            <td> <label className="XOSquare" id="2" onClick={() => markX("2")}> </label></td>
+                        </tr>
+                        <tr>
+                            <td> <label className="XOSquare" id="3" onClick={() => markX("3")}> </label></td>
+                            <td> <label className="XOSquare" id="4" onClick={() => markX("4")}> </label></td>
+                            <td> <label className="XOSquare" id="5" onClick={() => markX("5")}> </label></td>
+                        </tr>
+                        <tr>
+                            <td> <label className="XOSquare" id="6" onClick={() => markX("6")}> </label></td>
+                            <td> <label className="XOSquare" id="7" onClick={() => markX("7")}> </label></td>
+                            <td> <label className="XOSquare" id="8" onClick={() => markX("8")}> </label></td>
+                        </tr>
+                    </tbody>
+                </table><br/>
+                <label className="resultBox" id="result">Next turn: X</label>
+            </div>
     
     //let table = [];
     //for (let i=0; i<9; i++){
