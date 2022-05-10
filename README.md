@@ -1,3 +1,7 @@
+# Why doesn't it run?
+
+From this repository, I have excluded a very large folder (~386 MB) called "node_modules". It is filled with boilerplate files that I did not write. Some of them appear to be necessary to make the project run. If necessary, and upon request, I can provide copies of this folder.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
