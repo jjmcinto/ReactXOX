@@ -1,6 +1,6 @@
-# Why doesn't it run?
+# What is missing?
 
-From this repository, I have excluded a very large folder (~386 MB) called "node_modules". It is filled with boilerplate files that I did not write. Some of them appear to be necessary to make the project run. If necessary, and upon request, I can provide copies of this folder.
+From this repository, I have excluded a very large folder (~386 MB) called "node_modules". It is filled with boilerplate files that I did not write. Some of them appear to be necessary to make the project run. If required, and upon request, I can provide copies of this folder.
 
 # Getting Started with Create React App
 
